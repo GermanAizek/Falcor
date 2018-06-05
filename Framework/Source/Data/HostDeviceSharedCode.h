@@ -222,7 +222,7 @@ inline float convertShininessToRoughness(float shininess)
     return clamp(sqrt(2.0f / (shininess + 2.0f)), 0.f, 1.f);
 }
 
-inline float2 convertShininessToRoughness(float2 shininess)
+inline float2 convertShininessToRoughness(const float2 &shininess)
 {
     return clamp(sqrt(2.0f / (shininess + 2.0f)), 0.f, 1.f);
 }
